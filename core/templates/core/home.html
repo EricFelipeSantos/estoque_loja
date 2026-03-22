@@ -1,0 +1,71 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+  <!-- Título -->
+  <div class="text-center mb-5">
+    <h1 class="display-4">Sistema de Estoque 📦</h1>
+    <p class="lead">
+      Bem-vindo, <strong>{{ user.username }}</strong> 👋
+    </p>
+  </div>
+
+  <!-- Cards principais -->
+  <div class="row g-4">
+
+    <!-- Produtos -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body text-center">
+          <h5 class="card-title">Produtos</h5>
+          <p class="card-text">
+            Gerencie os produtos cadastrados no sistema.
+          </p>
+
+          <!-- Ajustar quando criar o CRUD -->
+           <a href="{% url 'estoque:lista_produtos' %}" class="btn btn-primary">
+            Acessar
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Categorias -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body text-center">
+          <h5 class="card-title">Categorias</h5>
+          <p class="card-text">
+            Organize os produtos por categorias.
+          </p>
+
+          <a href="{% url 'estoque:lista_categorias' %}" class="btn btn-success">
+            Acessar
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Movimentações -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body text-center">
+          <h5 class="card-title">Movimentações</h5>
+          <p class="card-text">
+            Controle entradas e saídas de estoque.
+          </p>
+
+          <a href="{% url 'estoque:lista_movimentacoes' %}" class="btn btn-warning">
+            Acessar
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+{% endblock %}

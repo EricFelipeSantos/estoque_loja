@@ -1,0 +1,19 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+
+<div class="container mt-5 text-center">
+
+  <h4>Deseja excluir essa movimentação?</h4>
+
+  <p>{{ movimentacao }}</p>
+
+  <form method="post">
+    {% csrf_token %}
+    <button class="btn btn-danger">Confirmar</button>
+    <a href="{% url 'estoque:lista_movimentacoes' %}" class="btn btn-secondary">Cancelar</a>
+  </form>
+
+</div>
+
+{% endblock %}

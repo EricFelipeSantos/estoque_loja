@@ -1,0 +1,48 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+  <div class="d-flex justify-content-between mb-3">
+    <h2>Movimentações 🔄</h2>
+
+    <a href="{% url 'estoque:movimentacao_create' %}" class="btn btn-primary">
+      Nova Movimentação
+    </a>
+  </div>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Tipo</th>
+        <th>Quantidade</th>
+        <th>Data</th>
+        <th>Usuário</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% for m in movimentacoes %}
+      <tr>
+        <td>{{ m.produto.nome }}</td>
+        <td>{{ m.tipo }}</td>
+        <td>{{ m.quantidade }}</td>
+        <td>{{ m.data }}</td>
+        <td>{{ m.usuario.username }}</td>
+        <td>
+          <a href="{% url 'estoque:movimentacao_delete' m.id %}" class="btn btn-danger btn-sm">
+            Excluir
+          </a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+
+  </table>
+
+</div>
+
+{% endblock %}
