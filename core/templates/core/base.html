@@ -11,8 +11,10 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" href="/">Estoque</a>
-
+    <a class="navbar-brand" href="{% url 'core:home' %}">Home</a>
+    <a class="navbar-brand" href="{% url 'estoque:lista_produtos' %}">Produtos</a>
+    <a class="navbar-brand" href="{% url 'estoque:lista_categorias' %}">Categorias</a>
+    <a class="navbar-brand" href="{% url 'estoque:lista_movimentacoes' %}">Movimentações</a>
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav ms-auto">
 
