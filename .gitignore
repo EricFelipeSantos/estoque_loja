@@ -1,22 +1,15 @@
-# Ambiente virtual
 .venv/
 
-# VS Code
 .vscode/
 
-# Banco de dados
 db.sqlite3
 
-# Cache Python
 __pycache__/
 *.pyc
 
-# Arquivos do sistema
 .DS_Store
 Thumbs.db
 
-# Logs
 *.log
 
-# Variáveis de ambiente (caso use depois)
 .env

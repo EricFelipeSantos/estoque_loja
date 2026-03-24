@@ -1,6 +1,6 @@
-# 📦 Sistema de Controle de Estoque
+#  Sistema de Controle de Estoque
 
-## 📌 Descrição
+## Descrição
 
 Sistema web desenvolvido com **Django** e **Django REST Framework** para gerenciamento de estoque.
 
@@ -8,9 +8,9 @@ O sistema permite cadastrar produtos, categorias e controlar movimentações de 
 
 ---
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
-### 🌐 Interface Web
+### Interface Web
 
 * Cadastro, edição e exclusão de produtos
 * Cadastro, edição e exclusão de categorias
@@ -18,27 +18,27 @@ O sistema permite cadastrar produtos, categorias e controlar movimentações de 
 * Controle automático de estoque
 * Interface com Bootstrap
 
-### 🔐 Autenticação
+###  Autenticação
 
 * Login de usuários
 * Logout
 * Proteção de páginas restritas (CRUD)
 
-### 🧠 Regras de Negócio
+###  Regras de Negócio
 
 * Atualização automática do estoque ao criar movimentações
 * Reversão automática ao excluir movimentações
 * Atualização correta ao editar movimentações
 * Proteção contra exclusão de categorias com produtos vinculados
 
-### 🔌 API REST
+###  API REST
 
 * Endpoints para produtos, categorias e movimentações
 * API protegida com autenticação
 
 ---
 
-## ⚙️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * Python
 * Django
@@ -48,7 +48,7 @@ O sistema permite cadastrar produtos, categorias e controlar movimentações de 
 
 ---
 
-## ▶️ Como executar o projeto
+## Como executar o projeto
 
 ```bash
 # Criar ambiente virtual
@@ -78,7 +78,7 @@ http://127.0.0.1:8000/
 
 ---
 
-## 🔐 Autenticação na API
+## Autenticação na API
 
 A API utiliza autenticação por sessão (login no sistema).
 
@@ -89,7 +89,7 @@ Para acessar:
 
 ---
 
-## 🔌 Endpoints da API
+## Endpoints da API
 
 Base da API:
 
@@ -99,7 +99,7 @@ http://127.0.0.1:8000/estoque/api/
 
 ---
 
-### 📦 Produtos
+### Produtos
 
 | Método | URL                           | Descrição         |
 | ------ | ----------------------------- | ----------------- |
@@ -111,7 +111,7 @@ http://127.0.0.1:8000/estoque/api/
 
 ---
 
-### 🗂️ Categorias
+### Categorias
 
 | Método | URL                             | Descrição           |
 | ------ | ------------------------------- | ------------------- |
@@ -123,7 +123,7 @@ http://127.0.0.1:8000/estoque/api/
 
 ---
 
-### 🔄 Movimentações
+### Movimentações
 
 | Método | URL                                | Descrição              |
 | ------ | ---------------------------------- | ---------------------- |
@@ -135,18 +135,18 @@ http://127.0.0.1:8000/estoque/api/
 
 ---
 
-## 🧠 Regras importantes da API
+##  Regras importantes da API
 
-* 🔐 Todos os endpoints exigem autenticação
-* 📈 Movimentações de entrada aumentam o estoque
-* 📉 Movimentações de saída diminuem o estoque
-* 🔄 Ao editar uma movimentação, o estoque é recalculado
-* ❌ Ao excluir uma movimentação, o estoque é revertido
-* 🚫 Categorias com produtos não podem ser excluídas
+* Todos os endpoints exigem autenticação
+* Movimentações de entrada aumentam o estoque
+* Movimentações de saída diminuem o estoque
+* Ao editar uma movimentação, o estoque é recalculado
+* Ao excluir uma movimentação, o estoque é revertido
+* Categorias com produtos não podem ser excluídas
 
 ---
 
-## 📁 Organização do Projeto
+## Organização do Projeto
 
 ```
 core/        → autenticação e páginas base
@@ -156,12 +156,12 @@ templates/   → arquivos HTML
 
 ---
 
-## 🏆 Autor
+## Autor
 
 Eric Felipe Santos
 
 ---
 
-## 📌 Observação
+## Observação
 
 Este projeto foi desenvolvido como atividade prática para aplicação de conceitos de Django, APIs REST e controle de estoque.
